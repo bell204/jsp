@@ -23,23 +23,28 @@ addReply아이디가 클릭되면 사용자를 구분할 수 있는 p_code와 co
 
 ![1 sha512](https://user-images.githubusercontent.com/32535590/38298290-f25395bc-3831-11e8-8705-a8ca41085a75.PNG)
 
-회원가입 트랜잭션 처리 
+<h2>회원가입 트랜잭션 처리</h2>
 ![1-](https://user-images.githubusercontent.com/32535590/38298314-fab5443a-3831-11e8-907b-2ed84993da6e.PNG)
 
 insert가 성공했다면 commit처리를 해주고, 실패했다면 rollback 해준다
 
 
 <h2>이메일 인증</h2>
+이메일인증은 다음과 같은 순서로 작동한다
+사용자A 메일 프로그램-메일 데몬-메일서버- TCP/IP -메일서버-메일데몬-사용자B 메일프로그램
 
-이메일 인증의 경우
-그리고 관리자 이메일 주소와 비밀번호를 이용하여 미리 작성된 인증번호가 전송된다. 인증번호는 랜덤함수를 사용하여 매번 인증버튼을 누를 때마다 달라진다.
+이메일 인증의 경우 javax.mail.jar 파일을 이용해서한다
 
 ![2](https://user-images.githubusercontent.com/32535590/38298333-04194954-3832-11e8-9a38-4ed0319cfeef.PNG)
+메일세션을 생성하고 빈 메시지를 만든다
+관리자 이메일 주소와 비밀번호를 이용하여 미리 작성된 인증번호가 전송된다. 
 
 ![2](https://user-images.githubusercontent.com/32535590/38298346-0c6d9164-3832-11e8-825d-2bd1bcb9a5d7.PNG)
 
 ![2](https://user-images.githubusercontent.com/32535590/38298355-1033af0e-3832-11e8-8e2f-7f4f8f0d558c.PNG)
 
+
+인증번호는 랜덤함수를 사용하여 매번 인증버튼을 누를 때마다 달라진다.
 ![3](https://user-images.githubusercontent.com/32535590/38298360-143f2b64-3832-11e8-9ca7-b277d690aa0d.PNG)
 
 
