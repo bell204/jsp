@@ -23,11 +23,6 @@ addReply아이디가 클릭되면 사용자를 구분할 수 있는 p_code와 co
 
 ![1 sha512](https://user-images.githubusercontent.com/32535590/38298290-f25395bc-3831-11e8-8705-a8ca41085a75.PNG)
 
-<h2>회원가입 트랜잭션 처리</h2>
-![default](https://user-images.githubusercontent.com/32535590/38299666-aa8b4870-3835-11e8-9485-9495f2404b3b.PNG)
-
-insert가 성공했다면 commit처리를 해주고, 실패했다면 rollback 해준다
-
 
 <h2>이메일 인증</h2>
 이메일인증은 다음과 같은 순서로 작동한다
