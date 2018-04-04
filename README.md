@@ -1,5 +1,33 @@
 # jsp
-기능
+<h1>JSP 쇼핑몰 (팀 프로젝트)</h1>
+
+<h2>프로젝트 명: 오늘의 동료</h2>
+
+<h2>개발기간 3.4 ~ 3.20</h2>
+
+<h2>개발 목표</h2>
+
+JSP, 서블릿을 이용하여 재능을 판매하고 구매할 수 있는 쇼핑몰 개발
+ 
+<h2>개발 환경</h2>
+
+운영체제- Window8
+
+사용 언어- Java, Javascript, Html, css
+
+라이브러리, 프레임워크- Jquery, Bootstrap
+
+IDE- 이클립스
+
+
+<h2>DB설계</h2>
+
+
+
+
+
+
+<h2>구현기능</h2>
 
 <h2>ajax 댓글</h2>
 addReply아이디가 클릭되면 사용자를 구분할 수 있는 p_code와 content(댓글내용)을 insertReply.do로 ajax통신을 이용해 전송
